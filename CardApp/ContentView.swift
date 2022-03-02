@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var cards = ["ありがとう": "Thank you",
-                 "こんにちは": "Hello",
+                 "こんにちは": "Hi",
                  "またね": "See you"]
     @State var japanese = "ありがとう"
     @State var isJapanese = true
@@ -25,7 +25,7 @@ struct ContentView: View {
                         .shadow(radius: 3)
                         .rotation3DEffect(.degrees(isJapanese ? 0 : 180),
                                           axis: (x: 0, y: 0, z: 1))
-                        .animation(.spring())
+//                        .animation(.spring())
                         .onTapGesture {
                             self.isJapanese.toggle()
                         }
