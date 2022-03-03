@@ -25,7 +25,7 @@ struct ContentView: View {
                         .shadow(radius: 3)
                         .rotation3DEffect(.degrees(isJapanese ? 0 : 180),
                                           axis: (x: 0, y: 0, z: 1))
-//                        .animation(.spring())
+                        .animation(.spring())
                         .onTapGesture {
                             self.isJapanese.toggle()
                         }
